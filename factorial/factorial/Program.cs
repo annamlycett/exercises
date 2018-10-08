@@ -22,7 +22,7 @@ namespace factorial
         static void Main(string[] args)
         {
             Console.WriteLine("Hello. I'm a factorial calculator.");
-            Console.WriteLine("Give me a positive integer:");
+            Console.Write("Give me a positive integer: ");
             int num = Convert.ToInt32(Console.ReadLine());
 
             if (num <1)
@@ -31,10 +31,8 @@ namespace factorial
                 Console.WriteLine("Give me a positive integer:");
                 num = Convert.ToInt32(Console.ReadLine());
             }
-            else
-            {
-                Console.WriteLine("The factorial of {0} is {1}.", num, Fact(num));
-            }
+
+            Console.WriteLine("The factorial of {0} is {1}.", num, Fact(num));
 
             Console.ReadLine();
         }
