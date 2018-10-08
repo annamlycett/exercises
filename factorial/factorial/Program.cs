@@ -28,7 +28,7 @@ namespace factorial
             for ( ; num < 1; )
             {
                 Console.WriteLine("This number is too small. Try a bigger number.");
-                Console.WriteLine("Give me a positive integer:");
+                Console.Write("Give me a positive integer:");
                 num = Convert.ToInt32(Console.ReadLine());
             }
 
